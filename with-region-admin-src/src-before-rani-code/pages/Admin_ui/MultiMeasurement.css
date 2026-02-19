@@ -1,0 +1,37 @@
+/* Page header container */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space */
+    padding: 0px 10px;
+    width: 100%;
+  }
+  
+  /* Style for the back button */
+  .back-button {
+    font-size: 16px;
+    color: #1890ff;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Page title centered */
+  .page-title {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  /* Optional: Right side empty space */
+  .empty-space {
+    flex-grow: 0; /* Keeps the right space empty */
+    width: 20px;  /* Or any other width to control the space */
+  }
+
+  .custom-disabled {
+    cursor: not-allowed !important;
+  }
+  
+  

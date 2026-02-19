@@ -1,0 +1,42 @@
+.no-measurement-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Full height for vertical centering */
+    width: 100%; /* Full width of the parent container */
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+  }
+  
+  .no-measurement-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #1890ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .no-measurement-message h5 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .no-measurement-message p {
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  /* Fade-in animation for better appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

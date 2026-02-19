@@ -1,0 +1,143 @@
+{ 
+    "_id" : ObjectId("62385cdad340a478ea165dc3"), 
+    "comp_name" : "component1", 
+    "comp_code" : "1001", 
+    "positive" : "ok", 
+    "negative" : "notok", 
+    "datasets" : [
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_1.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_2.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_3.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_4.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_5.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\ok\\component1_1001_6.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\notok\\component1_1001_1.png", 
+            "type" : "notok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\notok\\component1_1001_2.png", 
+            "type" : "notok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\notok\\component1_1001_3.png", 
+            "type" : "notok"
+        }, 
+        {
+            "image_path" : "Datasets\\component1_1001\\notok\\component1_1001_4.png", 
+            "type" : "notok"
+        }
+    ], 
+    "status" : "training completed", 
+    "is_active" : true
+}
+{ 
+    "_id" : ObjectId("62386317d340a478ea165dc6"), 
+    "comp_name" : "component2", 
+    "comp_code" : "1002", 
+    "positive" : "ok", 
+    "negative" : "notok", 
+    "datasets" : [
+        {
+            "image_path" : "Datasets\\component2_1002\\ok\\component2_1002_1.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component2_1002\\ok\\component2_1002_2.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component2_1002\\ok\\component2_1002_3.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component2_1002\\ok\\component2_1002_4.png", 
+            "type" : "ok"
+        }, 
+        {
+            "image_path" : "Datasets\\component2_1002\\notok\\component2_1002_1.png", 
+            "type" : "notok"
+        }, 
+        {
+            "image_path" : "Datasets\\component2_1002\\notok\\component2_1002_2.png", 
+            "type" : "notok"
+        }
+    ], 
+    "status" : "training completed", 
+    "is_active" : true
+}
+{ 
+    "_id" : ObjectId("6239767a1213b5486fec70d1"), 
+    "comp_name" : "component3", 
+    "comp_code" : "1003", 
+    "positive" : "match", 
+    "negative" : "no match", 
+    "datasets" : [
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_1.png", 
+            "type" : "match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\no match\\component3_1003_1.png", 
+            "type" : "no match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_2.png", 
+            "type" : "match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_3.png", 
+            "type" : "match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_4.png", 
+            "type" : "match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_5.png", 
+            "type" : "match"
+        }, 
+        {
+            "image_path" : "Datasets\\component3_1003\\match\\component3_1003_6.png", 
+            "type" : "match"
+        }
+    ], 
+    "is_active" : false
+}
+{ 
+    "_id" : ObjectId("623978571213b5486fec70d2"), 
+    "comp_name" : "component4", 
+    "comp_code" : "1004", 
+    "positive" : "match", 
+    "negative" : "no match", 
+    "datasets" : [
+        {
+            "image_path" : "Datasets\\component4_1004\\no match\\component4_1004_1.png", 
+            "type" : "no match"
+        }, 
+        {
+            "image_path" : "Datasets\\component4_1004\\match\\component4_1004_1.png", 
+            "type" : "match"
+        }
+    ], 
+    "status" : "training completed", 
+    "is_active" : true
+}

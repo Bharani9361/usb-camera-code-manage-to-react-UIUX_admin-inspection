@@ -1,0 +1,180 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* .disabled-link {
+  pointer-events: none;
+  color: gray;
+  cursor: not-allowed
+} */
+
+
+
+
+
+/* Sidebar container */
+.sidebar-container {
+  background-color: #f8f9fc; /* Light off-white background */
+  color: #495057; /* Dark gray text */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Sidebar menu title */
+#side-menu .menu-title {
+  font-weight: bold;
+  /* margin: 20px 15px; */
+  color: #6c757d !important;
+  text-transform: uppercase;
+}
+
+/* Sidebar list items */
+#side-menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Sidebar list item */
+#side-menu li {
+  /* margin: 5px 0;  */
+  margin: 3px 0; 
+}
+
+
+/* Sidebar link container */
+#side-menu .sidebar-link {
+  display: flex;
+  flex-direction: column; /* Stack the icon and text vertically */
+  align-items: center; /* Center the content horizontally */
+  /* padding: 12px 20px; */
+  color: #495057 !important;
+  text-decoration: none;
+  background-color: transparent; /* Default transparent background */
+  transition: all 0.3s ease-in-out;
+  /* border-radius: 8px; */
+  align-items: center !important;
+}
+
+/* Hover effect */
+#side-menu .sidebar-link:hover {
+  background-color: #e6e9fd !important; /* Soft blue background on hover */
+  color: #556EE6 !important; /* Vibrant blue text on hover */
+}
+
+.disableSidebar {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Disabled link */
+/* #side-menu .sidebar-link.disabled-link {
+  pointer-events: none;
+  color: #ced4da;
+} */
+
+/* Sidebar icon container */
+/* #side-menu .sidebar-icon-container {
+  
+} */
+
+/* Sidebar icons */
+#side-menu .sidebar-icon {
+  /* font-size: 1rem;  */
+  font-size: 0.5rem; 
+  color: inherit !important;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect on icon */
+#side-menu .sidebar-link:hover .sidebar-icon {
+  transform: scale(1.1);
+  color: #556EE6 !important;
+}
+
+/* Active link style */
+#side-menu .sidebar-link.active {
+  background-color: #d6d9f9; 
+  color: #556EE6 !important; 
+  font-weight: bold;
+}
+
+/* Active icon style */
+#side-menu .sidebar-link.active .sidebar-icon {
+  color: #556EE6 !important; 
+  transform: scale(1.1); 
+}
+
+
+/* Media query for small screens (Mobile / Tablets) */
+@media (max-width: 768px) {
+  #side-menu .sidebar-link {
+    flex-direction: column; /* Stack icon and text vertically on small screens */
+    align-items: center; /* Center content */
+    justify-content: center; /* Ensure icons are centered */
+  }
+
+  
+#side-menu .sidebar-link.active .sidebar-icon {
+  color: #556EE6 !important; /* Apply the same active color to the icon */
+  transform: scale(1.1); /* Optional: Add a slight scale effect on the icon */
+}
+  /* Hide text and only show icons by default */
+  #side-menu .sidebar-link span {
+    display: none;
+  }
+
+  /* Show text when hovering over the link */
+  #side-menu .sidebar-link:hover span {
+    display: inline-block;
+    margin-left: 8px; /* Space between the icon and text */
+    color: #495057;
+  }
+
+  /* Adjust icon size for smaller screens */
+  #side-menu .sidebar-icon {
+    font-size: 0.5rem; /* Reduce icon size on small screens */
+  }
+
+  #side-menu .sidebar-link.active .sidebar-icon {
+    color: #556EE6 !important; /* Apply the same active color to the icon */
+    transform: scale(1.1); /* Optional: Add a slight scale effect on the icon */
+  }
+
+  #side-menu .sidebar-link:hover {
+    background-color: #e6e9fd !important; /* Soft blue background on hover */
+    color: #556EE6 !important; /* Vibrant blue text on hover */
+  }
+
+}
+
+/* Media query for medium and larger screens */
+@media (min-width: 769px) {
+  #side-menu .sidebar-link {
+    flex-direction: row; /* Align icon and text horizontally on larger screens */
+    align-items: center; /* Center content horizontally */
+  }
+
+  /* Ensure text is always visible on larger screens */
+  #side-menu .sidebar-link span {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  /* Adjust icon size for larger screens */
+  #side-menu .sidebar-icon {
+    font-size: 1.2rem; /* Adjust icon size for larger screens */
+  }
+  
+  #side-menu .sidebar-link:hover {
+    background-color: #e6e9fd !important; /* Soft blue background on hover */
+    color: #556EE6 !important; /* Vibrant blue text on hover */
+  }
+ #side-menu .sidebar-link.active .sidebar-icon {
+    color: #556EE6 !important; /* Apply the same active color to the icon */
+    transform: scale(1.1); /* Optional: Add a slight scale effect on the icon */
+  }
+  
+
+}

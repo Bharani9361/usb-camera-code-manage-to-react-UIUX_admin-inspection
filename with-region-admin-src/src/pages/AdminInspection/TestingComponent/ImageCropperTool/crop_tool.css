@@ -1,0 +1,11 @@
+.cropper-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .cropper-wrapper {
+        max-width: 100%;
+    }
+}

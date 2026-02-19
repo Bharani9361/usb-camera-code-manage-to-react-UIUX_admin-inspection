@@ -1,0 +1,24 @@
+/* Style for the progress bar container */
+.progress {
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smooth transition for progress updates */
+  .progress-bar {
+    transition: width 0.5s ease-in-out; /* Smooth transition effect */
+    background-color: #4caf50; /* Green color for progress */
+    height: 100%; /* Full height of the progress bar */
+    border-radius: 5px;
+  }
+  
+  /* Customize the text inside progress bar */
+  .progress .progress-bar {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px; /* Vertically center the text */
+  }
+  

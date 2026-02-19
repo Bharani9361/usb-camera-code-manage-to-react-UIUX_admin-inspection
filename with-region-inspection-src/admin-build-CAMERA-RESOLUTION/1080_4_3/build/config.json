@@ -1,0 +1,5 @@
+{
+    "API_URL": "https://api.production.example.com",
+    "IMAGE_URL": "https://images.production.example.com",
+    "ADMIN_URL": "https://admin.production.example.com"
+}

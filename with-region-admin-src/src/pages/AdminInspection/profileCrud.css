@@ -1,0 +1,20 @@
+.profile-card {
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  /* Red glow effect for Edit Mode */
+  .edit-mode-disabled {
+    border: 1px solid red;
+    /* border: 2px solid red;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6); */
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 992px) {
+    .profile-card {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+  

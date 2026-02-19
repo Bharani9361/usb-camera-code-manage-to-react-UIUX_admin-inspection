@@ -1,0 +1,140 @@
+/* src/styles/RemoteStg.css */
+
+.camera-card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.camera-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+.camera-card.captured {
+  border: 2px solid #28a745 !important;
+}
+
+.stage-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.webcam-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+}
+
+.camera-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 8px;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item {
+  position: relative;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border 0.2s;
+}
+.gallery-item.selected {
+  border-color: #007bff;
+}
+.gallery-item:hover {
+  border-color: #dee2e6;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  background: rgba(220, 53, 69, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+.gallery-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.stage-tab {
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  background: #e9ecef;
+  margin-right: 5px;
+}
+.stage-tab.active {
+  background: #fff;
+  font-weight: bold;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+.stage-tab:hover {
+  background: #dee2e6;
+}
+
+.capture-btn-container {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* Optional: make sure modal backdrop doesn't break layout */
+.modal-backdrop.show {
+  opacity: 0.5;
+}

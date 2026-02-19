@@ -1,0 +1,44 @@
+/* Custom table with fixed header and scrollable body */
+.table-wrapper {
+  position: relative;
+  max-height: 70vh; /* Set max height to preferred viewport height (70% of the screen height) */
+  overflow-y: auto; /* Enable scrolling for the table body */
+}
+
+.table-wrapper .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrapper .table thead {
+  position: sticky;
+  top: 0; /* Stick the header to the top */
+  z-index: 1; /* Ensure header stays on top of the body */
+  background-color: #f8f9fa; /* Background color for header */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to header */
+}
+
+.table-wrapper .table th[colspan], .table-wrapper .table th[rowspan] {
+  background-color: #f8f9fa;
+}
+
+.table-wrapper .table th, .table-wrapper .table td {
+  border: 1px solid #dee2e6; /* Add border for all cells */
+}
+
+.table-wrapper .table tbody tr {
+  background-color: white; /* Keep rows with white background */
+}
+
+.scroll-design::-webkit-scrollbar {
+  width: 4px;  /* Customize scrollbar width */
+}
+
+.scroll-design::-webkit-scrollbar-thumb {
+  background-color: #888;  /* Scroll thumb color */
+  border-radius: 8px;  /* Rounded thumb */
+}
+
+.scroll-design::-webkit-scrollbar-thumb:hover {
+  background-color: #555;  /* Darker color when hovering */
+}

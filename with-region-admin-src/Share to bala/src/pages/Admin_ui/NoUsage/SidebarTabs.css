@@ -1,0 +1,24 @@
+.sidebar-tabs {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #595959;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .tab span {
+    margin-left: 10px;
+  }
+  
+  .tab:hover {
+    color: #1890ff;
+  }
+  

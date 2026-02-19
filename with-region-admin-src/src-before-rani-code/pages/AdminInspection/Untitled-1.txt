@@ -1,0 +1,20 @@
+
+train_comp_regions  ->      3226
+train_comp          ->      10396
+
+
+Changes:
+********
+1. changed the rectangle coordinates to 640x480.
+2. In /modelCreation, /adminAccTesting, /profileRatioHandler, /modelAccTesting
+pages red and green outlines removed. 
+3. 
+
+
+
+
+25-07-24
+********
+pending:
+1. set captured outline original image as reference image in region drawing window while capturing.
+with or without backgroud based on comp_info collection 'background' field.
